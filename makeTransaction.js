@@ -20,10 +20,10 @@ const randomIntegerFromInterval = (min, max) => {
   );
   }
   
-  const logSuccess = (data) => {
-    const id = data.id;
-    const time = data.time;
-    console.log(`Transaction ${id} processed in ${time}ms`);
+const logSuccess = ({ id, time }) => {
+    const SuccessId = id;
+    const SuccessTime = time;
+    console.log(`Transaction ${SuccessId} processed in ${SuccessTime}ms`);
   };
   
   const logError = id => {
